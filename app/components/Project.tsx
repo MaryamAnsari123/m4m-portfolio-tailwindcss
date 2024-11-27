@@ -10,15 +10,19 @@ export default function Project({
   link: string;
 }) {
   return (
-    <div className="border-2 text-center w-80 h-44 items-center justify-center
-     border-blue-600 p-6 rounded-lg shadow-xl shadow-black hover:shadow-4xl
-     transition-shadow duration-400 bg-gray-700 mt-8" data-aos="zoom-in">
-      <h2 className="text-3xl font-bold">{title}</h2>
-      <p className="text-white mt-2 mb-3">{description}</p>
+    <div className="border-2  w-56 md:w-48 lg:w-80 h-44
+     border-blue-600 hover:shadow-md  rounded-lg shadow-xl shadow-black hover:shadow-4xl
+     transition-shadow bg-gray-700" data-aos="zoom-in">
+      <div className="text-center place-items-center space-y-4 p-3 lg:p-5">
+      <h2 className="lg:text-3xl text-2xl md:text-xl font-bold">{title}</h2>
+      <p className="text-white">{description}</p>
+      <p>
       <Link href={link} target="_blank" className="text-blue-500
-       hover:text-yellow-300 font-bold">
+       hover:bg-yellow-200 font-bold bg-gray-200 p-2 md:p2 rounded-md ">
         View Project
       </Link>
+      </p>
+      </div>
     </div>
   );
 }

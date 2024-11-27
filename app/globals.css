@@ -8,3 +8,20 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
   }
 }
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .menu {
+    display: flex;
+  }
+  .mobile-menu {
+    display: none;
+  }
+}

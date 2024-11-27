@@ -11,7 +11,7 @@ const projects = [
         link: "https://m4m-birthdaywish-3.vercel.app/" },
         { title: "Weather Widget", description: "A weather widget App", 
           link: "https://m4m-weather-widget-2.vercel.app/" },
-          { title: "Number Gussing Game", description: "A Number Guessing Game", 
+          { title: "Number Gussing", description: "A Number Guessing Game", 
             link: "https://m4m-number-guessing.vercel.app/" },
             { title: "Color Picker", description: "A Color Picker App", 
               link: "https://color-picker-one-drab.vercel.app/" },
@@ -24,14 +24,19 @@ const projects = [
 
 export default function Project() {
   return (
-    <div className="max-w-5xl mx-auto py-8">
-      <h1 className="text-6xl shadow-lg shadow-blue-600 bg-gray-200 font-bold
-       mb-4 text-center text-gray-600 rounded-md p-3"
-      data-aos="fade-right">Projects</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+    <div className="m-2 bg-blue-300 p-2">
+      <div className='border-2 border-white text-center lg:py-8 py-4'>
+        <div className="md:text-6xl text-3xl shadow-lg shadow-blue-600 bg-gray-200
+       font-bold text-center text-gray-600 border-2 border-gray-600 rounded-md p-4 m-4">
+      <h1 data-aos="fade-right">Projects</h1>
+      </div>
+      <div className="grid grid-cols-1 place-items-center md:grid-cols-3
+       lg:px-20 p-2 lg:gap-8 gap-6 mt-10">
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}
+      
+      </div>
       </div>
     </div>
   );

@@ -1,7 +1,8 @@
 
 import "./globals.css";
-import Navbar from "./components/Navbar";
+import CustomNavbar from "./components/Navbar";
 import Footer from "./components/Footer";
+
 
 
 
@@ -13,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-      <Navbar />
+      <CustomNavbar />
       {children}
       <Footer />
       </body>
